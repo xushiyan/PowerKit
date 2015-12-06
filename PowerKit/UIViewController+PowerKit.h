@@ -6,7 +6,7 @@
 //  Copyright © 2015 PowerStudio. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 @import CoreMotion;
 
 @interface UIViewController (PowerKit)

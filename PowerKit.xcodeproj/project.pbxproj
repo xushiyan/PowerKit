@@ -10,7 +10,7 @@
 		861B94D31C1477BF00957E78 /* PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 861B94D21C1477BF00957E78 /* PowerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		861B94DA1C1477BF00957E78 /* PowerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 861B94CF1C1477BF00957E78 /* PowerKit.framework */; };
 		861B94DF1C1477BF00957E78 /* PowerKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 861B94DE1C1477BF00957E78 /* PowerKitTests.m */; };
-		86D7BC421C147CE100A84E7F /* UIViewController+PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D7BC401C147CE100A84E7F /* UIViewController+PowerKit.h */; };
+		86D7BC421C147CE100A84E7F /* UIViewController+PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D7BC401C147CE100A84E7F /* UIViewController+PowerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86D7BC431C147CE100A84E7F /* UIViewController+PowerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D7BC411C147CE100A84E7F /* UIViewController+PowerKit.m */; };
 /* End PBXBuildFile section */
 
@@ -99,8 +99,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86D7BC421C147CE100A84E7F /* UIViewController+PowerKit.h in Headers */,
 				861B94D31C1477BF00957E78 /* PowerKit.h in Headers */,
+				86D7BC421C147CE100A84E7F /* UIViewController+PowerKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
