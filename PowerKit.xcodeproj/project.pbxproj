@@ -12,7 +12,7 @@
 		861B94DF1C1477BF00957E78 /* PowerKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 861B94DE1C1477BF00957E78 /* PowerKitTests.m */; };
 		86D7BC421C147CE100A84E7F /* UIViewController+PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D7BC401C147CE100A84E7F /* UIViewController+PowerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86D7BC431C147CE100A84E7F /* UIViewController+PowerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D7BC411C147CE100A84E7F /* UIViewController+PowerKit.m */; };
-		86E0D3441C14952300C86203 /* NSDate+PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 86E0D3421C14952300C86203 /* NSDate+PowerKit.h */; };
+		86E0D3441C14952300C86203 /* NSDate+PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 86E0D3421C14952300C86203 /* NSDate+PowerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86E0D3451C14952300C86203 /* NSDate+PowerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E0D3431C14952300C86203 /* NSDate+PowerKit.m */; };
 /* End PBXBuildFile section */
 
