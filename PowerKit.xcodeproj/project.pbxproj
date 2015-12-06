@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -149,6 +149,7 @@
 		861B94C61C1477BF00957E78 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PWR;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = PowerStudio;
 				TargetAttributes = {
@@ -161,7 +162,7 @@
 				};
 			};
 			buildConfigurationList = 861B94C91C1477BF00957E78 /* Build configuration list for PBXProject "PowerKit" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
