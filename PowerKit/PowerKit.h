@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char PowerKitVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <PowerKit/PublicHeader.h>
 
 
+#import <PowerKit/UIViewController+PowerKit.h>
