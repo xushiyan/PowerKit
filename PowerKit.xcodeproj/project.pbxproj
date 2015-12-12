@@ -10,6 +10,8 @@
 		861B94D31C1477BF00957E78 /* PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 861B94D21C1477BF00957E78 /* PowerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		861B94DA1C1477BF00957E78 /* PowerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 861B94CF1C1477BF00957E78 /* PowerKit.framework */; };
 		861B94DF1C1477BF00957E78 /* PowerKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 861B94DE1C1477BF00957E78 /* PowerKitTests.m */; };
+		86850CFB1C1C156B00F3772D /* UIColor+PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 86850CF91C1C156B00F3772D /* UIColor+PowerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86850CFC1C1C156B00F3772D /* UIColor+PowerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 86850CFA1C1C156B00F3772D /* UIColor+PowerKit.m */; };
 		86D7BC421C147CE100A84E7F /* UIViewController+PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D7BC401C147CE100A84E7F /* UIViewController+PowerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86D7BC431C147CE100A84E7F /* UIViewController+PowerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D7BC411C147CE100A84E7F /* UIViewController+PowerKit.m */; };
 		86E0D3441C14952300C86203 /* NSDate+PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 86E0D3421C14952300C86203 /* NSDate+PowerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +35,8 @@
 		861B94D91C1477BF00957E78 /* PowerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		861B94DE1C1477BF00957E78 /* PowerKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PowerKitTests.m; sourceTree = "<group>"; };
 		861B94E01C1477BF00957E78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86850CF91C1C156B00F3772D /* UIColor+PowerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PowerKit.h"; sourceTree = "<group>"; };
+		86850CFA1C1C156B00F3772D /* UIColor+PowerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PowerKit.m"; sourceTree = "<group>"; };
 		86D7BC401C147CE100A84E7F /* UIViewController+PowerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PowerKit.h"; sourceTree = "<group>"; };
 		86D7BC411C147CE100A84E7F /* UIViewController+PowerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PowerKit.m"; sourceTree = "<group>"; };
 		86E0D3421C14952300C86203 /* NSDate+PowerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+PowerKit.h"; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 				86D7BC411C147CE100A84E7F /* UIViewController+PowerKit.m */,
 				86E0D3421C14952300C86203 /* NSDate+PowerKit.h */,
 				86E0D3431C14952300C86203 /* NSDate+PowerKit.m */,
+				86850CF91C1C156B00F3772D /* UIColor+PowerKit.h */,
+				86850CFA1C1C156B00F3772D /* UIColor+PowerKit.m */,
 			);
 			path = PowerKit;
 			sourceTree = "<group>";
@@ -107,6 +113,7 @@
 			files = (
 				861B94D31C1477BF00957E78 /* PowerKit.h in Headers */,
 				86E0D3441C14952300C86203 /* NSDate+PowerKit.h in Headers */,
+				86850CFB1C1C156B00F3772D /* UIColor+PowerKit.h in Headers */,
 				86D7BC421C147CE100A84E7F /* UIViewController+PowerKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +217,7 @@
 			files = (
 				86D7BC431C147CE100A84E7F /* UIViewController+PowerKit.m in Sources */,
 				86E0D3451C14952300C86203 /* NSDate+PowerKit.m in Sources */,
+				86850CFC1C1C156B00F3772D /* UIColor+PowerKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
