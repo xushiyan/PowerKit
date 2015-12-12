@@ -10,6 +10,8 @@
 		861B94D31C1477BF00957E78 /* PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 861B94D21C1477BF00957E78 /* PowerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		861B94DA1C1477BF00957E78 /* PowerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 861B94CF1C1477BF00957E78 /* PowerKit.framework */; };
 		861B94DF1C1477BF00957E78 /* PowerKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 861B94DE1C1477BF00957E78 /* PowerKitTests.m */; };
+		86773C861C1C23DE00BDD7CD /* UIView+PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 86773C841C1C23DE00BDD7CD /* UIView+PowerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86773C871C1C23DE00BDD7CD /* UIView+PowerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 86773C851C1C23DE00BDD7CD /* UIView+PowerKit.m */; };
 		86850CFB1C1C156B00F3772D /* UIColor+PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 86850CF91C1C156B00F3772D /* UIColor+PowerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86850CFC1C1C156B00F3772D /* UIColor+PowerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 86850CFA1C1C156B00F3772D /* UIColor+PowerKit.m */; };
 		86D7BC421C147CE100A84E7F /* UIViewController+PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D7BC401C147CE100A84E7F /* UIViewController+PowerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,6 +37,8 @@
 		861B94D91C1477BF00957E78 /* PowerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		861B94DE1C1477BF00957E78 /* PowerKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PowerKitTests.m; sourceTree = "<group>"; };
 		861B94E01C1477BF00957E78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86773C841C1C23DE00BDD7CD /* UIView+PowerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PowerKit.h"; sourceTree = "<group>"; };
+		86773C851C1C23DE00BDD7CD /* UIView+PowerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PowerKit.m"; sourceTree = "<group>"; };
 		86850CF91C1C156B00F3772D /* UIColor+PowerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PowerKit.h"; sourceTree = "<group>"; };
 		86850CFA1C1C156B00F3772D /* UIColor+PowerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PowerKit.m"; sourceTree = "<group>"; };
 		86D7BC401C147CE100A84E7F /* UIViewController+PowerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PowerKit.h"; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 				86E0D3431C14952300C86203 /* NSDate+PowerKit.m */,
 				86850CF91C1C156B00F3772D /* UIColor+PowerKit.h */,
 				86850CFA1C1C156B00F3772D /* UIColor+PowerKit.m */,
+				86773C841C1C23DE00BDD7CD /* UIView+PowerKit.h */,
+				86773C851C1C23DE00BDD7CD /* UIView+PowerKit.m */,
 			);
 			path = PowerKit;
 			sourceTree = "<group>";
@@ -114,6 +120,7 @@
 				861B94D31C1477BF00957E78 /* PowerKit.h in Headers */,
 				86E0D3441C14952300C86203 /* NSDate+PowerKit.h in Headers */,
 				86850CFB1C1C156B00F3772D /* UIColor+PowerKit.h in Headers */,
+				86773C861C1C23DE00BDD7CD /* UIView+PowerKit.h in Headers */,
 				86D7BC421C147CE100A84E7F /* UIViewController+PowerKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86D7BC431C147CE100A84E7F /* UIViewController+PowerKit.m in Sources */,
+				86773C871C1C23DE00BDD7CD /* UIView+PowerKit.m in Sources */,
 				86E0D3451C14952300C86203 /* NSDate+PowerKit.m in Sources */,
 				86850CFC1C1C156B00F3772D /* UIColor+PowerKit.m in Sources */,
 			);
@@ -279,9 +287,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -323,6 +332,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
