@@ -1,0 +1,25 @@
+{
+  "name": "PowerKit",
+  "version": "0.1.0",
+  "summary": "A short description of PowerKit.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/PowerKit",
+  "license": "MIT",
+  "authors": {
+    "XU SHIYAN": "xushiyan.1990@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/PowerKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "PowerKit": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

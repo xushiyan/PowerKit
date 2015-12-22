@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'PowerKit_Example', :exclusive => true do
+  pod "PowerKit", :path => "../"
+end
+
+target 'PowerKit_Tests', :exclusive => true do
+  pod "PowerKit", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+end

@@ -1,0 +1,6 @@
+framework module Pods_PowerKit_Example {
+  umbrella header "Pods-PowerKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
