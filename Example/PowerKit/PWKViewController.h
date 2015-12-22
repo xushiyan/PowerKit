@@ -7,6 +7,7 @@
 //
 
 @import UIKit;
+@import PowerKit;
 
 @interface PWKViewController : UIViewController
 
