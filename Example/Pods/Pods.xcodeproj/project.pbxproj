@@ -61,6 +61,14 @@
 		471FD4F68E27AB26FA2AEBB8B245CEE4 /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ABB2201E2C23ED09ECB1930B874AA59 /* NSValue+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47EFDF5FD136FF8207FB924D9B30E69C /* PowerKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A0407B298A0F6D83A2CD75EAC9585F /* PowerKit-dummy.m */; };
 		4BBCBB9D8EF0B241A4A4FE4982985481 /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 71AF85B6558D634E3F383BA6AAEF3267 /* ExpectaSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4EC44ECD1C2909A400AA08C7 /* NSDate+PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC44EC51C2909A400AA08C7 /* NSDate+PowerKit.h */; };
+		4EC44ECE1C2909A400AA08C7 /* NSDate+PowerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC44EC61C2909A400AA08C7 /* NSDate+PowerKit.m */; };
+		4EC44ECF1C2909A400AA08C7 /* UIColor+PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC44EC71C2909A400AA08C7 /* UIColor+PowerKit.h */; };
+		4EC44ED01C2909A400AA08C7 /* UIColor+PowerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC44EC81C2909A400AA08C7 /* UIColor+PowerKit.m */; };
+		4EC44ED11C2909A400AA08C7 /* UIView+PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC44EC91C2909A400AA08C7 /* UIView+PowerKit.h */; };
+		4EC44ED21C2909A400AA08C7 /* UIView+PowerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC44ECA1C2909A400AA08C7 /* UIView+PowerKit.m */; };
+		4EC44ED31C2909A400AA08C7 /* UIViewController+PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC44ECB1C2909A400AA08C7 /* UIViewController+PowerKit.h */; };
+		4EC44ED41C2909A400AA08C7 /* UIViewController+PowerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC44ECC1C2909A400AA08C7 /* UIViewController+PowerKit.m */; };
 		4F2A41F79DE51BDE077CFB7635069660 /* SPTExcludeGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = 5514D13D44B78009D4AFEEDFA4E4FDBB /* SPTExcludeGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51DDDB0FB4899757CF6A826B531B940D /* EXPUnsupportedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CE42337022021AE45B4E067D494C32F /* EXPUnsupportedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5376BD60BB504FF6E777B3A744236770 /* Pods-PowerKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4155A605306302A0A2C105D5C5105E28 /* Pods-PowerKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -277,6 +285,14 @@
 		4A13AEBD3A512EC975C2DD3AF8D8931D /* Expecta+Snapshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Expecta+Snapshots.xcconfig"; sourceTree = "<group>"; };
 		4A6FA6514DAE7C7226C8C112DFE74E58 /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beFalsy.m"; path = "Expecta/Matchers/EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
 		4D94C2222C0253B958B353EECC310234 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		4EC44EC51C2909A400AA08C7 /* NSDate+PowerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+PowerKit.h"; sourceTree = "<group>"; };
+		4EC44EC61C2909A400AA08C7 /* NSDate+PowerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+PowerKit.m"; sourceTree = "<group>"; };
+		4EC44EC71C2909A400AA08C7 /* UIColor+PowerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PowerKit.h"; sourceTree = "<group>"; };
+		4EC44EC81C2909A400AA08C7 /* UIColor+PowerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PowerKit.m"; sourceTree = "<group>"; };
+		4EC44EC91C2909A400AA08C7 /* UIView+PowerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PowerKit.h"; sourceTree = "<group>"; };
+		4EC44ECA1C2909A400AA08C7 /* UIView+PowerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PowerKit.m"; sourceTree = "<group>"; };
+		4EC44ECB1C2909A400AA08C7 /* UIViewController+PowerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PowerKit.h"; sourceTree = "<group>"; };
+		4EC44ECC1C2909A400AA08C7 /* UIViewController+PowerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PowerKit.m"; sourceTree = "<group>"; };
 		5089DA448F1CB0FB085C4E12AFDD53A2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		51B34EFC4AB0895A9F930413755AC4EB /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "Expecta/Matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
 		5267376A130B688AA8DC669933C16D9A /* EXPMatchers+haveCountOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+haveCountOf.m"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.m"; sourceTree = "<group>"; };
@@ -796,6 +812,14 @@
 		F148E157F735A69D77628519C3ACB107 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4EC44EC51C2909A400AA08C7 /* NSDate+PowerKit.h */,
+				4EC44EC61C2909A400AA08C7 /* NSDate+PowerKit.m */,
+				4EC44EC71C2909A400AA08C7 /* UIColor+PowerKit.h */,
+				4EC44EC81C2909A400AA08C7 /* UIColor+PowerKit.m */,
+				4EC44EC91C2909A400AA08C7 /* UIView+PowerKit.h */,
+				4EC44ECA1C2909A400AA08C7 /* UIView+PowerKit.m */,
+				4EC44ECB1C2909A400AA08C7 /* UIViewController+PowerKit.h */,
+				4EC44ECC1C2909A400AA08C7 /* UIViewController+PowerKit.m */,
 				902B86B0413CD7AE6973440A31C86B9F /* ReplaceMe.m */,
 			);
 			path = Classes;
@@ -855,6 +879,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EC44ED11C2909A400AA08C7 /* UIView+PowerKit.h in Headers */,
+				4EC44ECD1C2909A400AA08C7 /* NSDate+PowerKit.h in Headers */,
+				4EC44ED31C2909A400AA08C7 /* UIViewController+PowerKit.h in Headers */,
+				4EC44ECF1C2909A400AA08C7 /* UIColor+PowerKit.h in Headers */,
 				3FDC31F9656A4741F67161C887AF50B4 /* PowerKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1224,7 +1252,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				47EFDF5FD136FF8207FB924D9B30E69C /* PowerKit-dummy.m in Sources */,
+				4EC44ECE1C2909A400AA08C7 /* NSDate+PowerKit.m in Sources */,
+				4EC44ED01C2909A400AA08C7 /* UIColor+PowerKit.m in Sources */,
+				4EC44ED21C2909A400AA08C7 /* UIView+PowerKit.m in Sources */,
 				791D4227C9893AA221DD021CD3777E13 /* ReplaceMe.m in Sources */,
+				4EC44ED41C2909A400AA08C7 /* UIViewController+PowerKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
