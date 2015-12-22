@@ -35,7 +35,8 @@ A group of categories or subclasses that bring convenience to cocoa implementati
     'PowerKit' => ['Pod/Assets/*.png']
   }
 
-  s.public_header_files = 'Pod/Classes/Categories/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.module_name = 'PowerKit'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
