@@ -68,6 +68,8 @@
 		4EAAA15C1C2A8EB500647E0A /* UIView+PowerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAAA1541C2A8EB500647E0A /* UIView+PowerKit.m */; };
 		4EAAA15D1C2A8EB500647E0A /* UIViewController+PowerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EAAA1551C2A8EB500647E0A /* UIViewController+PowerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4EAAA15E1C2A8EB500647E0A /* UIViewController+PowerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAAA1561C2A8EB500647E0A /* UIViewController+PowerKit.m */; };
+		4EAAA1621C2A901A00647E0A /* PWKFeedbackFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EAAA1601C2A901A00647E0A /* PWKFeedbackFooterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EAAA1631C2A901A00647E0A /* PWKFeedbackFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAAA1611C2A901A00647E0A /* PWKFeedbackFooterView.m */; };
 		4F2A41F79DE51BDE077CFB7635069660 /* SPTExcludeGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = 5514D13D44B78009D4AFEEDFA4E4FDBB /* SPTExcludeGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50272C70B205834E2A4E8507D2B5CEF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA4592AE6E6186E507091644724510C /* UIKit.framework */; };
 		51DDDB0FB4899757CF6A826B531B940D /* EXPUnsupportedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CE42337022021AE45B4E067D494C32F /* EXPUnsupportedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -293,6 +295,8 @@
 		4EAAA1541C2A8EB500647E0A /* UIView+PowerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PowerKit.m"; sourceTree = "<group>"; };
 		4EAAA1551C2A8EB500647E0A /* UIViewController+PowerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PowerKit.h"; sourceTree = "<group>"; };
 		4EAAA1561C2A8EB500647E0A /* UIViewController+PowerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PowerKit.m"; sourceTree = "<group>"; };
+		4EAAA1601C2A901A00647E0A /* PWKFeedbackFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWKFeedbackFooterView.h; sourceTree = "<group>"; };
+		4EAAA1611C2A901A00647E0A /* PWKFeedbackFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWKFeedbackFooterView.m; sourceTree = "<group>"; };
 		51B34EFC4AB0895A9F930413755AC4EB /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "Expecta/Matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
 		5267376A130B688AA8DC669933C16D9A /* EXPMatchers+haveCountOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+haveCountOf.m"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.m"; sourceTree = "<group>"; };
 		5514D13D44B78009D4AFEEDFA4E4FDBB /* SPTExcludeGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExcludeGlobalBeforeAfterEach.h; path = Specta/Specta/SPTExcludeGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
@@ -566,6 +570,8 @@
 		4EAAA14E1C2A8E2200647E0A /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				4EAAA1601C2A901A00647E0A /* PWKFeedbackFooterView.h */,
+				4EAAA1611C2A901A00647E0A /* PWKFeedbackFooterView.m */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -900,6 +906,7 @@
 			files = (
 				4EAAA15B1C2A8EB500647E0A /* UIView+PowerKit.h in Headers */,
 				4EAAA1571C2A8EB500647E0A /* NSDate+PowerKit.h in Headers */,
+				4EAAA1621C2A901A00647E0A /* PWKFeedbackFooterView.h in Headers */,
 				4EAAA15D1C2A8EB500647E0A /* UIViewController+PowerKit.h in Headers */,
 				4EAAA1591C2A8EB500647E0A /* UIColor+PowerKit.h in Headers */,
 				8EE9D9CCF5332E194FD6B339267C89B9 /* PowerKit-umbrella.h in Headers */,
@@ -1333,6 +1340,7 @@
 				4EAAA15E1C2A8EB500647E0A /* UIViewController+PowerKit.m in Sources */,
 				4EAAA1581C2A8EB500647E0A /* NSDate+PowerKit.m in Sources */,
 				4EAAA15A1C2A8EB500647E0A /* UIColor+PowerKit.m in Sources */,
+				4EAAA1631C2A901A00647E0A /* PWKFeedbackFooterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
