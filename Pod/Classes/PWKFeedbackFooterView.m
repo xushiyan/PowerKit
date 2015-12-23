@@ -21,13 +21,13 @@
         UIButton *feedback = [UIButton buttonWithType:UIButtonTypeSystem];
         [feedback setTitle:NSLocalizedString(@"Feedback", @"") forState:UIControlStateNormal];
         [feedback setImage:[UIImage imageNamed:@"ic_mail_outline_18pt"] forState:UIControlStateNormal];
-        feedback.titleLabel.font = [UIFont systemFontOfSize:12];
+        feedback.titleLabel.font = [UIFont systemFontOfSize:14];
         [feedback addTarget:self action:@selector(openMailComposer:) forControlEvents:UIControlEventTouchUpInside];
         
         UIButton *rate = [UIButton buttonWithType:UIButtonTypeSystem];
         [rate setTitle:NSLocalizedString(@"Rate on AppStore", @"") forState:UIControlStateNormal];
         [rate setImage:[UIImage imageNamed:@"ic_star_border_18pt"] forState:UIControlStateNormal];
-        rate.titleLabel.font = [UIFont systemFontOfSize:12];
+        rate.titleLabel.font = [UIFont systemFontOfSize:14];
         [rate addTarget:self action:@selector(openAppItemPage:) forControlEvents:UIControlEventTouchUpInside];
         
         UIStackView *horizontalStack = [[UIStackView alloc] initWithArrangedSubviews:@[feedback,rate]];
