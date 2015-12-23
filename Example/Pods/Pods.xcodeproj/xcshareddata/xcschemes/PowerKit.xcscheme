@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'ED646EFCFF4D5DC0A6F3D022'
+               BlueprintIdentifier = 'A63A9AB99A97DB6DFF1AE6DB'
                BlueprintName = 'PowerKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'PowerKit.framework'>

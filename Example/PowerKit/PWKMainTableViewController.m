@@ -7,9 +7,10 @@
 //
 
 #import "PWKMainTableViewController.h"
+@import MessageUI;
 @import PowerKit;
 
-@interface PWKMainTableViewController ()
+@interface PWKMainTableViewController () <PWKFeedbackFooterViewDelegate,MFMailComposeViewControllerDelegate>
 
 @end
 
@@ -25,11 +26,32 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     UITableView *tableView = self.tableView;
+    PWKFeedbackFooterView *footer = [[PWKFeedbackFooterView alloc] initWithFrame:CGRectMake(0, 0, 0, 44)];
+    footer.appStoreURL = [NSURL URLWithString:@"https://www.facebook.com/xushiyan"];
+    footer.delegate = self;
+    tableView.tableFooterView = footer;
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)feedbackFooterView:(PWKFeedbackFooterView *)feedbackFooterView didTapFeedbackButton:(UIButton *)feedbackButton {
+    if ([MFMailComposeViewController canSendMail]) {
+        MFMailComposeViewController *mail = [[MFMailComposeViewController alloc] init];
+        mail.mailComposeDelegate = self;
+        [mail setToRecipients:@[@"example@example.com"]];
+        [mail setSubject:NSLocalizedString(@"Feedback", @"Email subject for feedback.")];
+        
+        NSMutableString *body = [NSMutableString stringWithString:NSLocalizedString(@"Hi\n\nI would like to provide the following feedback.", @"Feedback email body")];
+        [mail setMessageBody:body isHTML:NO];
+        
+        [self presentViewController:mail animated:YES completion:NULL];
+    } else {
+        [self presentNoMailAlert];
+    }
 }
 
 #pragma mark - Table view data source
