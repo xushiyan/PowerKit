@@ -25,26 +25,31 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testDateOfTodayNoon {
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDate *now = [NSDate date];
+    NSDate *actual = [NSDate dateOfTodayNoonFromNowDate:now];
+    NSDate *expected = [calendar dateBySettingHour:12 minute:0 second:0 ofDate:now options:0];
+    XCTAssertEqualObjects(actual, expected);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testDateOfTodayEnd {
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDate *now = [NSDate date];
+    NSDate *actual = [NSDate dateOfTodayEndFromNowDate:now];
+    
+    NSDate *expected = [calendar dateBySettingHour:23 minute:59 second:59 ofDate:now options:0];
+    XCTAssertEqualObjects(actual, expected);
 }
 
 - (void)testDateOfEndTomorrow {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDate *now = [NSDate date];
-    NSDate *tomorrowEnd = [NSDate dateOfTomorrowEndFromNowDate:now];
-    NSDate *megaTomorrowStart = [tomorrowEnd dateByAddingTimeInterval:1];
-    NSDate *expected = [calendar dateByAddingUnit:NSCalendarUnitDay value:2 toDate:now options:0];
-    expected = [calendar startOfDayForDate:expected];
-    XCTAssertEqualObjects(megaTomorrowStart, expected);
+    NSDate *actual = [NSDate dateOfTomorrowEndFromNowDate:now];
+    
+    NSDate *expected = [calendar dateByAddingUnit:NSCalendarUnitDay value:1 toDate:now options:0];
+    expected = [calendar dateBySettingHour:23 minute:59 second:59 ofDate:expected options:0];
+    XCTAssertEqualObjects(actual, expected);
 }
 
 
