@@ -18,19 +18,21 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        UIButton *feedback = [UIButton buttonWithType:UIButtonTypeSystem];
-        [feedback setTitle:NSLocalizedString(@"Feedback", @"") forState:UIControlStateNormal];
-        [feedback setImage:[UIImage imageNamed:@"ic_mail_outline_18pt"] forState:UIControlStateNormal];
-        feedback.titleLabel.font = [UIFont systemFontOfSize:14];
-        [feedback addTarget:self action:@selector(openMailComposer:) forControlEvents:UIControlEventTouchUpInside];
+        UIButton *feedbackButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        [feedbackButton setTitle:NSLocalizedString(@"Feedback", @"") forState:UIControlStateNormal];
+        [feedbackButton setImage:[UIImage imageNamed:@"ic_mail_outline_18pt"] forState:UIControlStateNormal];
+        feedbackButton.titleLabel.font = [UIFont systemFontOfSize:14];
+        [feedbackButton addTarget:self.delegate action:@selector(feedbackButtonDidTouch:) forControlEvents:UIControlEventTouchUpInside];
+        self.feedbackButton = feedbackButton;
         
-        UIButton *rate = [UIButton buttonWithType:UIButtonTypeSystem];
-        [rate setTitle:NSLocalizedString(@"Rate on AppStore", @"") forState:UIControlStateNormal];
-        [rate setImage:[UIImage imageNamed:@"ic_star_border_18pt"] forState:UIControlStateNormal];
-        rate.titleLabel.font = [UIFont systemFontOfSize:14];
-        [rate addTarget:self action:@selector(openAppItemPage:) forControlEvents:UIControlEventTouchUpInside];
+        UIButton *rateButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        [rateButton setTitle:NSLocalizedString(@"Rate on AppStore", @"") forState:UIControlStateNormal];
+        [rateButton setImage:[UIImage imageNamed:@"ic_star_border_18pt"] forState:UIControlStateNormal];
+        rateButton.titleLabel.font = [UIFont systemFontOfSize:14];
+        [rateButton addTarget:self action:@selector(openAppItemPage:) forControlEvents:UIControlEventTouchUpInside];
+        self.rateButton = rateButton;
         
-        UIStackView *horizontalStack = [[UIStackView alloc] initWithArrangedSubviews:@[feedback,rate]];
+        UIStackView *horizontalStack = [[UIStackView alloc] initWithArrangedSubviews:@[feedbackButton,rateButton]];
         horizontalStack.axis = UILayoutConstraintAxisHorizontal;
         horizontalStack.distribution = UIStackViewDistributionFillEqually;
         horizontalStack.alignment = UIStackViewAlignmentCenter;
@@ -42,10 +44,6 @@
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[horizontalStack]|" options:0 metrics:nil views:viewDict]];
     }
     return self;
-}
-
-- (void)openMailComposer:(id)sender {
-    [self.delegate feedbackFooterView:self didTapFeedbackButton:self.feedbackButton];
 }
 
 - (void)openAppItemPage:(id)sender {

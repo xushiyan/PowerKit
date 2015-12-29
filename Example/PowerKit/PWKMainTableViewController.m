@@ -38,7 +38,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)feedbackFooterView:(PWKFeedbackFooterView *)feedbackFooterView didTapFeedbackButton:(UIButton *)feedbackButton {
+- (void)feedbackButtonDidTouch:(UIButton *)sender {
     if ([MFMailComposeViewController canSendMail]) {
         MFMailComposeViewController *mail = [[MFMailComposeViewController alloc] init];
         mail.mailComposeDelegate = self;

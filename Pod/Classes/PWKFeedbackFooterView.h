@@ -22,6 +22,7 @@
 
 @protocol PWKFeedbackFooterViewDelegate <NSObject>
 
-- (void)feedbackFooterView:(PWKFeedbackFooterView *)feedbackFooterView didTapFeedbackButton:(UIButton *)feedbackButton;
+@optional
+- (void)feedbackButtonDidTouch:(UIButton *)sender;
 
 @end
