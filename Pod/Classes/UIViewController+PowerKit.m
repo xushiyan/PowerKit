@@ -39,7 +39,7 @@
             break;
         case CMErrorMotionActivityNotAuthorized:
             title = NSLocalizedString(@"Motion & Fitness is not authorized.", @"");
-            message = NSLocalizedString(@"Please go to Settings > Privacy > Motion & Fitness to turn on the authorization for PowerLog.", @"");
+            message = NSLocalizedString(@"Please go to Settings > Privacy > Motion & Fitness to turn on the authorization for this App.", @"");
             break;
         case CMErrorMotionActivityNotEntitled:
             title = NSLocalizedString(@"The app is missing a required entitlement.", @"");
